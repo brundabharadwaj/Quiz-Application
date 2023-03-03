@@ -1,34 +1,33 @@
 # Quiz-Application
 Database Design :
 
-Table: Users
+<b>Table: Users</b></br>
+user_id (int, primary key)</br>
+name (varchar)</br>
+email (varchar)</br>
+password (varchar)</br>
 
-user_id (int, primary key)
-name (varchar)
-email (varchar)
-password (varchar)
+<b>Table: Quizzes</b></br>
+quiz_id (int, primary key)</br>
+quiz_name (varchar)</br>
+quiz_description (varchar)</br>
+quiz_maker_id (int, foreign key to Users.user_id)</br>
 
-Table: Quizzes
-quiz_id (int, primary key)
-quiz_name (varchar)
-quiz_description (varchar)
-quiz_maker_id (int, foreign key to Users.user_id)
+ <b>Table: Questions</b></br>
+question_id (int, primary key)</br>
+question_text (varchar)</br>
+question_difficulty (varchar)</br>
+  
+Table: Answers</br>
+answer_id (int, primary key)</br>
+answer_text (varchar)</br>
+is_correct (boolean)</br>
 
-Table: Questions
-question_id (int, primary key)
-question_text (varchar)
-question_difficulty (varchar)
-Table: Answers
+Table: Quiz_Questions</br>
+quiz_id (int, foreign key to Quizzes.quiz_id)</br>
+question_id (int, foreign key to Questions.question_id)</br>
 
-answer_id (int, primary key)
-answer_text (varchar)
-is_correct (boolean)
-
-Table: Quiz_Questions
-quiz_id (int, foreign key to Quizzes.quiz_id)
-question_id (int, foreign key to Questions.question_id)
-
-Table: Question_Answers
-question_id (int, foreign key to Questions.question_id)
-answer_id (int, foreign key to Answers.answer_id)
+Table: Question_Answers</br>
+question_id (int, foreign key to Questions.question_id)</br>
+answer_id (int, foreign key to Answers.answer_id)</br>
 

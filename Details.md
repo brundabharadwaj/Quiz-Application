@@ -1,4 +1,4 @@
-# Quiz-Application
+# Quiz-Application _ Design Details
 Database Design :
 
 <b>Table: Users</b></br>

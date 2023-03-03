@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Image, Button,ButtonGroup } from 'semantic-ui-react'
+import { Card, Image, Button } from 'semantic-ui-react'
 import Form from "semantic-ui-react/dist/commonjs/collections/Form";
  import Logo from '../Assets/quiz-buzz-logo.png'
 
@@ -20,7 +20,7 @@ import Form from "semantic-ui-react/dist/commonjs/collections/Form";
                 <Form.Field><Form.Input type="text" placeholder={"Last name"} /></Form.Field>
                 <Form.Field><Form.Input type="password" placeholder={"Password"} /></Form.Field>
                 <Form.Field><Form.Input type="password" placeholder={"Confirm password"} /></Form.Field>
-               <p>Forgot password?&nbsp; &nbsp;<a href="#" target={"_blank"}>Click here </a></p>
+               <p>Forgot password?&nbsp; &nbsp;<a href="http://" rel="noreferrer"  target={"_blank"}>Click here </a></p>
              
     <Button  style={{marginLeft:'20%'}} basic positive>Save</Button>
     <Button basic negative>Clear</Button>
